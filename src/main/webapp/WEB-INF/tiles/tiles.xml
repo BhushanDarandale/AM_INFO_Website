@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="resumeLayout" template="/WEB-INF/views/resumelayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="" />
+	</definition>
+
+	<definition name="baseLayout" template="/WEB-INF/views/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+	</definition>
+
+
+	<definition name="resume" extends="resumeLayout">
+		<put-attribute name="title" value="Resume" />
+		<put-attribute name="body" value="/WEB-INF/views/resume.jsp" />
+	</definition>
+
+	<definition name="error" extends="baseLayout">
+		<put-attribute name="title" value="Redirect" />
+		<put-attribute name="body" value="/WEB-INF/views/error.jsp" />
+	</definition>
+
+	<definition name="home" extends="baseLayout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+	</definition>
+
+	<definition name="dashboard" extends="baseLayout">
+		<put-attribute name="title" value="Dashboard" />
+		<put-attribute name="body" value="/WEB-INF/views/dashboard.jsp" />
+	</definition>
+
+	<definition name="article" extends="baseLayout">
+		<put-attribute name="title" value="Article" />
+		<put-attribute name="body" value="/WEB-INF/views/article.jsp" />
+	</definition>
+
+	<definition name="java" extends="baseLayout">
+		<put-attribute name="title" value="Java" />
+		<put-attribute name="body" value="/WEB-INF/views/java.jsp" />
+	</definition>
+
+
+	<definition name="contact" extends="baseLayout">
+		<put-attribute name="title" value="Contact" />
+		<put-attribute name="body" value="/WEB-INF/views/contact.jsp" />
+	</definition>
+
+
+	<definition name="news" extends="baseLayout">
+		<put-attribute name="title" value="News" />
+		<put-attribute name="body" value="/WEB-INF/views/news.jsp" />
+	</definition>
+
+
+	<definition name="about" extends="baseLayout">
+		<put-attribute name="title" value="About" />
+		<put-attribute name="body" value="/WEB-INF/views/about.jsp" />
+	</definition>
+
+
+	<definition name="addarticle" extends="baseLayout">
+		<put-attribute name="title" value="Add Article" />
+		<put-attribute name="body" value="/WEB-INF/views/articleadd.jsp" />
+	</definition>
+
+	<definition name="singlearticle" extends="baseLayout">
+		<put-attribute name="title" value="Article" />
+		<put-attribute name="body" value="/WEB-INF/views/singlearticle.jsp" />
+	</definition>
+
+	<definition name="loginredirect" extends="baseLayout">
+		<put-attribute name="title" value="Redirect" />
+		<put-attribute name="body" value="/WEB-INF/views/loginredirect.jsp" />
+	</definition>
+
+	<definition name="tags" extends="baseLayout">
+		<put-attribute name="title" value="Redirect" />
+		<put-attribute name="body" value="/WEB-INF/views/tags.jsp" />
+	</definition>
+
+	<definition name="tagsearch" extends="baseLayout">
+		<put-attribute name="title" value="Redirect" />
+		<put-attribute name="body" value="/WEB-INF/views/tagsearch.jsp" />
+	</definition>
+
+
+
+</tiles-definitions>  
