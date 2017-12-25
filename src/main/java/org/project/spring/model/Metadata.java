@@ -30,8 +30,6 @@ public class Metadata implements java.io.Serializable {
 	private Date datetime;
 	private Integer status;
 	private String keywords;
-	private Set javaPosts = new HashSet(0);
-	private Set users = new HashSet(0);
 
 	public Metadata() {
 	}
@@ -41,7 +39,7 @@ public class Metadata implements java.io.Serializable {
 	}
 
 	public Metadata(String title, String link, String description, String image, Date datetime, Integer status,
-			String keywords, Set javaPosts, Set users) {
+			String keywords) {
 		this.title = title;
 		this.link = link;
 		this.description = description;
@@ -49,8 +47,6 @@ public class Metadata implements java.io.Serializable {
 		this.datetime = datetime;
 		this.status = status;
 		this.keywords = keywords;
-		this.javaPosts = javaPosts;
-		this.users = users;
 	}
 
 	@Id
@@ -127,24 +123,6 @@ public class Metadata implements java.io.Serializable {
 
 	public void setKeywords(String keywords) {
 		this.keywords = keywords;
-	}
-
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "metadata")
-	public Set getJavaPosts() {
-		return this.javaPosts;
-	}
-
-	public void setJavaPosts(Set javaPosts) {
-		this.javaPosts = javaPosts;
-	}
-
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "metadata")
-	public Set getUsers() {
-		return this.users;
-	}
-
-	public void setUsers(Set users) {
-		this.users = users;
 	}
 
 }

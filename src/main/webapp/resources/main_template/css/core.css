@@ -782,8 +782,6 @@ input[type="cancel"] {
 @media ( min-width : 768px) {
 	#main-menu {
 		float: right;
-		margin: 16px 0;
-		margin: 1rem 0;
 	}
 	#main-menu ul.horizontal-navigation>li {
 		margin-left: 0px;
