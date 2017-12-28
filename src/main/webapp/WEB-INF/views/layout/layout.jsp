@@ -8,11 +8,11 @@
 <meta name="author" content="Arun and Bhushan">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="icon" href="<%=request.getContextPath()%>/resources/main_template/images/logo.png" " />
+<link rel="icon" href="<%=request.getContextPath()%>/resources/main_template/images/logo.png" />
 
 <title>J4Java | Home</title>
 <link media="all" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-<link media="all" type="text/css" href="<%=request.getContextPath()%>/resources/main_template/css/font-awesome.min.css" rel="stylesheet">
+<link media="all" type="text/css" href=" main_template/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="<%=request.getContextPath()%>/resources/main_template/css/bootstrap.min.css" type="text/css" media="screen" />
 <link media="all" type="text/css" href="<%=request.getContextPath()%>/resources/main_template/css/core.css" rel="stylesheet">
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/main_template/js/jquery-1.11.2.min.js"></script>
