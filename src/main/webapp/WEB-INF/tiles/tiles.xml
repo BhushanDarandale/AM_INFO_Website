@@ -14,10 +14,31 @@
 		<put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
 	</definition>
 
-
+	<!--Menu's -->
 	<definition name="home" extends="baseLayout">
 		<put-attribute name="title" value="Home" />
 		<put-attribute name="body" value="/WEB-INF/views/home.jsp" />
 	</definition>
+
+	<definition name="quiz" extends="baseLayout">
+		<put-attribute name="title" value="Quiz" />
+		<put-attribute name="body" value="/WEB-INF/views/quiz.jsp" />
+	</definition>
+	
+	<definition name="tutorial" extends="baseLayout">
+		<put-attribute name="title" value="Tutorial" />
+		<put-attribute name="body" value="/WEB-INF/views/tutorial.jsp" />
+	</definition>
+	
+	<definition name="programs" extends="baseLayout">
+		<put-attribute name="title" value="Programs" />
+		<put-attribute name="body" value="/WEB-INF/views/programs.jsp" />
+	</definition>
+	
+	<definition name="queans" extends="baseLayout">
+		<put-attribute name="title" value="QA" />
+		<put-attribute name="body" value="/WEB-INF/views/queans.jsp" />
+	</definition>
+	<!--Menu's End -->
 
 </tiles-definitions>  

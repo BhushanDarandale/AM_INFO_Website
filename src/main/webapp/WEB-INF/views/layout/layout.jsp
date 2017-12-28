@@ -3,9 +3,11 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 <html>
+
 <head>
 <meta charset="UTF-8">
 <meta name="author" content="Arun and Bhushan">
+<<<<<<< HEAD
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="icon" href="<%=request.getContextPath()%>/resources/main_template/images/logo.png" />
@@ -17,106 +19,57 @@
 <link media="all" type="text/css" href="<%=request.getContextPath()%>/resources/main_template/css/core.css" rel="stylesheet">
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/main_template/js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath()%>/resources/main_template/js/bootstrap337.min.js"></script>
+=======
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>eNno Bootstrap Template</title>
+
+<!-- Bootstrap -->
+<link href="<%=request.getContextPath()%>/resources/j4java/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/j4java/css/animate.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/j4java/css/font-awesome.min.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/j4java/css/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/j4java/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/j4java/css/demo.css" />
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/j4java/css/set1.css" />
+<link href="<%=request.getContextPath()%>/resources/j4java/css/overwrite.css" rel="stylesheet">
+<link href="<%=request.getContextPath()%>/resources/j4java/css/style.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+>>>>>>> a32513f4747d2f4d15fb9d6ab4e1dabd06a725c0
 </head>
+
+
 <body class="home">
-	<!-- #masthead -->
-	<div id="masthead" class="fixed-header"
-		style="-webkit-filter: drop-shadow(0px 1px 2px #FF9800);">
-		<div id="site-header" role="banner">
-			<div class="container">
-				<div class="row">
-					<nav id="main-menu" role="navigation">
-						<ul class="horizontal-navigation">
-							<li class="menu-home"><a href='<c:url value="/home" ></c:url>' title="Home">Home</a></li>
-							<li class="menu-home"><a href='<c:url value="/quiz" ></c:url>' title="Quiz">Quiz</a></li>
-							<li class="menu-home"><a href='<c:url value="/tutorial" ></c:url>' title="Tutorial">Tutorial</a></li>
-							<li class="menu-home"><a href='<c:url value="/program" ></c:url>' title="Programs">Programs</a></li>
-							<li class="menu-home"><a href='<c:url value="/question" ></c:url>' title="Q &amp; A">Q&amp;A</a></li>
-						</ul>
-					</nav>
-					<!-- #main-menu -->
-				</div>
-				<!-- .row -->
-			</div>
-			<!-- .container -->
-		</div>
-	</div>
+<tiles:insertAttribute name="header" />
 
 	<main id="content" role="main">
-		<div class="section" style="margin-top: 100px;">
-			<div class="container">
-				<div class="row"><tiles:insertAttribute name="error" /></div>
-				<div class="row"><tiles:insertAttribute name="body" /></div>
-			</div>
-		</div>
-	</main>
-	<!-- #content -->
-	<main id="content" role="main">
-		<div class="section">
-			<div class="container">
-				<div class="row"><div id="disqus_thread"></div></div>
-			</div>
-		</div>
-	</main>
-	<div id="prefooter" role="complementary">
+	<div class="section" style="margin-top: 100px;">
 		<div class="container">
 			<div class="row">
-				<div class="one-third-block">
-					<div class="contact-widget widget">
-						<h4 class="widget-title">J4JAVA</h4>
-						<p>.....</p>
-						<p>Address : Old Sangavi, Pune, MH 411045</p>
-						<p>
-							<i class="fa fa-phone fa-fw"></i>+91 9011822778
-						</p>
-						<p>
-							<i class="fa fa-envelope fa-fw"></i>info@j4java.com
-						</p>
-					</div>
-				</div>
-				<div class="one-third-block">
-					<div class="connect-widget widget">
-						<h4 class="widget-title">Join our Mailing List</h4>
-						<p>Be first person to receive our new post in your mail.</p>
-						<form class="widget-form" action="#" method="get">
-							<input type="email" class="form-control"
-								placeholder="Enter your email address" value="" name="email"
-								title="Enter your email address" />
-							<button class="btn btn-success"
-								style="background-color: #333; border-color: #333;">Subscribe</button>
-						</form>
-					</div>
-				</div>
-				<div class="one-third-block">
-					<div class="connect-widget widget">
-						<div class="social-icons">
-							<h4 class="widget-title">Connect with us</h4>
-							<ul class="horizontal-navigation">
-								<li><a title="Facebook" href="https://facebook.com/arunmaharana123" target="_blank"><i class="fa fa-facebook"></i></a></li>
-								<li><a title="LinkedIn" href="https://in.linkedin.com/in/arunmaharana123" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-								<li><a title="GitHub" href="https://github.com/arunmaharana123" target="_blank"><i class="fa fa-github"></i></a></li>
-								<li><a title="Stack-OverFlow" href="https://stackoverflow.com/users/6708771/arun-maharana" target="_blank"><i class="fa fa-stack-overflow"></i></a></li>
-								<li><a title="Instagram" href="https://www.instagram.com/arunmaharana123/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-								<li><a title="Twitter" href="https://twitter.com/arunmaharana123" target="_blank"><i class="fa fa-twitter"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
+				<tiles:insertAttribute name="error" />
+			</div>
+			<div class="row">
+				<tiles:insertAttribute name="body" />
 			</div>
 		</div>
 	</div>
-	<!-- #prefooter -->
-	<footer id="footer" role="contentinfo">
+	</main>
+	<main id="content" role="main">
+	<div class="section">
 		<div class="container">
 			<div class="row">
-				<div class="copyright">&copy; j4java.com 2018-19
-					&nbsp;&nbsp;&nbsp; Design by Arun & Bhushan</div>
+				<div id="disqus_thread"></div>
 			</div>
-			<!-- .row -->
 		</div>
-		<!-- .container -->
-	</footer>
-	<!-- #footer -->
+	</div>
+	</main>
+	
+
 	<!-- Scripts -->
 	<script>
 		(function() { // DON'T EDIT BELOW THIS LINE
@@ -131,6 +84,6 @@
 			href="https://disqus.com/?ref_noscript">comments powered by
 			Disqus.</a>
 	</noscript>
-
+<tiles:insertAttribute name="footer" />
 </body>
 </html>
