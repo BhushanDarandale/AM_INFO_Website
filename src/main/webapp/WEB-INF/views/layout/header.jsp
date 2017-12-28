@@ -8,7 +8,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html"><span>J4JAVA</span></a>
+				<a class="navbar-brand" href="home"><span>J4JAVA</span></a>
 			</div>
 			<div class="navbar-collapse collapse">							
 				<div class="menu">
