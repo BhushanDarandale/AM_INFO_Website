@@ -1,13 +1,13 @@
 package org.project.spring.service;
 
-import org.project.spring.dao.impl.DAO;
+import org.project.spring.dao.DAO_Home;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service("service")
-public class MyService {
+public class Service_Home {
 
 	@Autowired
-	DAO dao;
+	DAO_Home dao;
 
 }
