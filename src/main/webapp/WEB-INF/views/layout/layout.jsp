@@ -7,6 +7,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="author" content="Arun and Bhushan">
+<<<<<<< HEAD
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="<%=request.getContextPath()%>/resources/main_template/images/logo.png" />
+
+<title>J4Java | Home</title>
+<link media="all" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<link media="all" type="text/css" href=" main_template/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/main_template/css/bootstrap.min.css" type="text/css" media="screen" />
+<link media="all" type="text/css" href="<%=request.getContextPath()%>/resources/main_template/css/core.css" rel="stylesheet">
+<script type="text/javascript" src="<%=request.getContextPath()%>/resources/main_template/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/resources/main_template/js/bootstrap337.min.js"></script>
+=======
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>eNno Bootstrap Template</title>
@@ -27,6 +40,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+>>>>>>> a32513f4747d2f4d15fb9d6ab4e1dabd06a725c0
 </head>
 
 
