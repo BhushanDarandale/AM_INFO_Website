@@ -15,11 +15,8 @@
 	<form name="home" action="<c:url value='/home'/>" method="get">
 		<input type="hidden" value="" name="id" id="deviceUUID">
 	</form>
-<<<<<<< HEAD
-	<script src="<%=request.getContextPath()%>/resources/js/client.min.js"></script>
-=======
-	<script src="<%=request.getContextPath()%>/resources//j4java/js/client.min.js"></script>
->>>>>>> a32513f4747d2f4d15fb9d6ab4e1dabd06a725c0
+
+	<script src="<%=request.getContextPath()%>/resources/j4java/js/client.min.js"></script>
 	<!-- Javascripts -->
 	<script language="javascript">
 		var client = new ClientJS();
