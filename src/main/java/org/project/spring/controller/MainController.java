@@ -22,11 +22,7 @@ public class MainController {
 
 	@RequestMapping(value = "/home", method = RequestMethod.GET, headers = "Accept=application/json")
 	public String getHome(Model model, final HttpServletRequest request) {
-<<<<<<< HEAD
 		System.out.println(request.getParameter("id"));//My Id : 2960177694
-=======
-		System.out.println(request.getParameter("id"));
->>>>>>> a32513f4747d2f4d15fb9d6ab4e1dabd06a725c0
 		return "home";
 	}
 }
