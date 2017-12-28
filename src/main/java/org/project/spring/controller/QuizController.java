@@ -16,8 +16,8 @@ public class QuizController {
 	QuizService service;
 
 	@RequestMapping(value = "/quiz", method = RequestMethod.GET, headers = "Accept=application/json")
-	public String geteQuizs(Model model, final HttpServletRequest request) {
-		return "home";
+	public String getQuizs(Model model, final HttpServletRequest request) {
+		return "quiz";
 	}
 
 }
